@@ -17,7 +17,7 @@ api = Api(route_api)
 Resource_demo
 """
 
-api.add_resource(Index, '/', endpoint='index')
+api.add_resource(Index, '/index', endpoint='index')
 
 # 带参数url 可以写在一起
 # 无参数：http://0.0.0.0:9999/api/demo/
