@@ -10,7 +10,7 @@ import datetime
 import platform
 import traceback
 
-from flask import request
+from flask import request, current_app
 from werkzeug.exceptions import HTTPException
 
 from app.api import route_api
@@ -56,20 +56,20 @@ def errors(e):
     print('异常类型:', type(e))
 
     if isinstance(e, CustomException):
-        print('-----CustomException-----')
+        current_app.logger.info('-----CustomException-----')
         # tb('-----CustomException-----')
         return api_result(code=e.code, message='CustomException:【{}】'.format(str(e.msg)),
                           data=request.method + ' ' + request.path)
 
     if isinstance(e, HTTPException) and (300 <= e.code < 600):
-        print('-----HTTPException-----')
-        print('===>path is not found: '+request.path)
+        current_app.logger.info('-----HTTPException-----')
+        current_app.logger.info('===>path is not found: '+request.path)
         # tb('-----HTTPException-----')
         return api_result(code=e.code, message='HTTPException:【{}】'.format(str(e)),
                           data=request.method + ' ' + request.path)
 
     else:
-        print('-----Exception-----')
+        current_app.logger.info('-----Exception-----')
         # tb('-----Exception-----')
         return api_result(code=500, message='Exception:【{}】'.format(str(e)), data=request.method + ' ' + request.path)
 
