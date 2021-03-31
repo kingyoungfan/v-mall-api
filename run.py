@@ -10,6 +10,8 @@ import warnings
 import platform
 import threading
 
+from flask import current_app
+
 from ApplicationExample import create_app
 from ExtendRegister.hook_register import *  # 导入拦截器
 from ExtendRegister.excep_register import *  # 导入异常处理器
@@ -36,7 +38,7 @@ def check_env(*args):
 
 def main():
     print("======>main 方法")
-    app.logger.info(' ===> log 打印')
+    current_app.logger.info('===> run main')
     """启动"""
     # 必须变量
     check_env('FLASK_ENV')
