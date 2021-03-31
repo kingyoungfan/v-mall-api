@@ -10,6 +10,7 @@ import requests
 from flask_restful import Resource
 
 from common.libs.customException import ab_code, ab_code_2
+from run import app
 
 
 class Index(Resource):
@@ -18,6 +19,7 @@ class Index(Resource):
         import os
         import threading
         from flask import jsonify
+        app.logger.info('===>hello')
         return jsonify({
             'path:"/api/"': 'flask api',
             'threading': threading.get_ident(),
