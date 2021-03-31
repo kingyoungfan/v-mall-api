@@ -57,20 +57,20 @@ def errors(e):
 
     if isinstance(e, CustomException):
         print('-----CustomException-----')
-        tb('-----CustomException-----')
+        # tb('-----CustomException-----')
         return api_result(code=e.code, message='CustomException:【{}】'.format(str(e.msg)),
                           data=request.method + ' ' + request.path)
 
     if isinstance(e, HTTPException) and (300 <= e.code < 600):
         print('-----HTTPException-----')
         print('===>path is not found: '+request.path)
-        tb('-----HTTPException-----')
+        # tb('-----HTTPException-----')
         return api_result(code=e.code, message='HTTPException:【{}】'.format(str(e)),
                           data=request.method + ' ' + request.path)
 
     else:
         print('-----Exception-----')
-        tb('-----Exception-----')
+        # tb('-----Exception-----')
         return api_result(code=500, message='Exception:【{}】'.format(str(e)), data=request.method + ' ' + request.path)
 
 
