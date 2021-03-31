@@ -17,7 +17,7 @@ from common.libs.api_result import api_result
 
 @route_api.app_errorhandler(Exception)
 def errors(e):
-    current_app.logger.info(e)
+    current_app.logger.error(e)
     # current_app.logger.info('异常类型:', str(type(e)))
 
     if isinstance(e, CustomException):
