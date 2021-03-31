@@ -19,7 +19,7 @@ class Index(Resource):
         import os
         import threading
         from flask import jsonify
-
+        a = 1/0
         current_app.logger.info('===> hello world ya')
         print("===> print 打印")
         return jsonify({
