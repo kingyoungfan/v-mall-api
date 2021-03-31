@@ -25,13 +25,15 @@ def my_job01():
 sched.add_job(my_job01, 'interval', seconds=5)
 
 
+
+
+
+'''
 # 添加任务方法二
 @sched.scheduled_job('interval', seconds=5)
 def my_job02():
     print('任务二', time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 
-
-'''
 logs_path = os.getcwd() + '/test.log'
 # print(logs_path)
 with open(logs_path, 'w+') as f:
