@@ -35,6 +35,7 @@ def check_env(*args):
 
 
 def main():
+    print("======>main 方法")
     """启动"""
     # 必须变量
     check_env('FLASK_ENV')

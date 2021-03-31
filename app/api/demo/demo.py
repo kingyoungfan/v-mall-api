@@ -21,6 +21,7 @@ class Index(Resource):
         from flask import jsonify
 
         current_app.logger.info('===> hello world ya')
+        print("===> print 打印")
         return jsonify({
             'path:"/api/"': 'flask api',
             'threading': threading.get_ident(),
