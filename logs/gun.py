@@ -7,5 +7,5 @@ accesslog = '-'  # gunicorn 访问日志
 errorlog = '-'  # 错误信息日志
 # access_log_format = '%(h) -  %(t)s - %(u)s - %(s)s %(H)s'
 # 代码更新重启
-logger_class = 'logs/log_config.CustomLogger'
+logger_class = 'config/log_config.CustomLogger'
 reload = True
