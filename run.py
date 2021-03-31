@@ -62,7 +62,6 @@ def main():
 
 
 if __name__ == '__main__':
-
     pass
     """
     # 设置环境
@@ -90,10 +89,10 @@ if __name__ == '__main__':
     print('父进程id:{}'.format(os.getppid()))
     print('<', '-' * 66, '>')
     main()
-#
-# if __name__ != '__main__':
-#     import logging
-#
-#     gunicorn_logger = logging.getLogger('gunicorn.error')
-#     app.logger.handlers = gunicorn_logger.handlers
-#     app.logger.setLevel(gunicorn_logger.level)
+
+if __name__ != '__main__':
+    import logging
+
+    gunicorn_logger = logging.getLogger('gunicorn.info')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
