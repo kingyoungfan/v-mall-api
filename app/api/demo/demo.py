@@ -20,7 +20,7 @@ class Index(Resource):
         import threading
         from flask import jsonify
 
-        current_app.logger.info('===> hello world')
+        current_app.logger.info('===> hello world ya')
         return jsonify({
             'path:"/api/"': 'flask api',
             'threading': threading.get_ident(),
