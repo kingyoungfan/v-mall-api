@@ -6,11 +6,11 @@
 # @Software: PyCharm
 
 import requests
+from flask import current_app
 
 from flask_restful import Resource
 
 from common.libs.customException import ab_code, ab_code_2
-from run import app
 
 
 class Index(Resource):
@@ -19,7 +19,8 @@ class Index(Resource):
         import os
         import threading
         from flask import jsonify
-        app.logger.info('===>hello')
+
+        current_app.logger.info('===> hello world')
         return jsonify({
             'path:"/api/"': 'flask api',
             'threading': threading.get_ident(),
