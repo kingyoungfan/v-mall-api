@@ -53,7 +53,7 @@ def tb(excep):
 @route_api.app_errorhandler(Exception)
 def errors(e):
     current_app.logger.info('异常:', e)
-    current_app.logger.info('异常类型:', type(e))
+    current_app.logger.info('异常类型:', str(type(e)))
 
     if isinstance(e, CustomException):
         current_app.logger.info('-----CustomException-----')
