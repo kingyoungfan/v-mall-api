@@ -8,4 +8,8 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-db = SQLAlchemy()
+from run import app
+
+app.config.from_object('config')
+
+db = SQLAlchemy(app)
