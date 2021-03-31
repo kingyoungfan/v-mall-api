@@ -18,7 +18,6 @@ class Index(Resource):
         import os
         import threading
         from flask import jsonify
-        print("===>111")
         return jsonify({
             'path:"/api/"': 'flask api',
             'threading': threading.get_ident(),

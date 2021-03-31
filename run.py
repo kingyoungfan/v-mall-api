@@ -59,11 +59,15 @@ def main():
         app.run(debug=app.config.get('DEBUG'), host=app.config.get('RUN_HOST'), port=app.config.get('RUN_PORT'))
 
 
-if __name__ == '__main__':
+if __name__ != '__main__':
     import logging
+
     gunicorn_logger = logging.getLogger('gunicorn.error')
     app.logger.handlers = gunicorn_logger.handlers
     app.logger.setLevel(gunicorn_logger.level)
+
+if __name__ == '__main__':
+
     pass
     """
     # 设置环境
