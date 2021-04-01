@@ -153,7 +153,7 @@ class ProductionConfig(BaseConfig):
     R = redis.Redis(connection_pool=POOL)
 
 
-class NewConfig(BaseConfig):
+class Config(BaseConfig):
     """区分配置文件"""
 
     conf = get_config()  # 根据环境变量获取对应的配置文件
@@ -192,7 +192,7 @@ config_obj = {
     'production': ProductionConfig,
     'development': DevelopmentConfig,
     'default': DevelopmentConfig,
-    'new': NewConfig
+    'config': Config
 }
 
 if __name__ == '__main__':
