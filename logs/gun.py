@@ -9,4 +9,3 @@ errorlog = '-'  # 错误信息日志
 # 代码更新重启
 # loggerclass = 'log_config.CustomLogger'
 reload = True
-FLASK_ENV = 'sandbox'
