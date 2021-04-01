@@ -44,6 +44,6 @@ def create_app():
     register_config(app)
     register_bp(app)
     print("===> 初始化")
-    current_app.logger.info('===> log 初始化')
+    app.logger.info('===> log 初始化')
     db.init_app(app)
     return app
