@@ -43,7 +43,7 @@ def create_app():
     CORS(app, supports_credentials=True)  # 跨域
     register_config(app)
     register_bp(app)
-    flask_env = os.environ['FLASK_ENV']
+    flask_env = os.getenv('FLASK_ENV')
     print("===> 初始化, flask_env===start>")
     print(flask_env)
     print("===> 初始化, flask_env===end ")
