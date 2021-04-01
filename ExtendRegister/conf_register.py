@@ -5,7 +5,7 @@
 # @File    : conf_register.py
 # @Software: PyCharm
 
-from config.config import config_obj, app_conf
+from config.config import config_obj
 
 
 def register_config(app):
