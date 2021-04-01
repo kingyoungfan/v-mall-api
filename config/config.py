@@ -16,7 +16,7 @@ import redis
 def get_config():
     """获取配置文件"""
     conf = configparser.ConfigParser()
-    flask_env = os.environ.get('FLASK_ENV')
+    flask_env = os.getenv('FLASK_ENV')
     print('===> config flask_env:'+flask_env)
     base_path = os.getcwd().split('jipin-mall-api')[0] + 'jipin-mall-api/config/'
 
