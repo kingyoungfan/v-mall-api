@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask as _Flask
+from flask import Flask as _Flask, current_app
 from flask.json import JSONEncoder as _JSONEncoder
 from flask_cors import CORS
 
@@ -43,5 +43,7 @@ def create_app():
     CORS(app, supports_credentials=True)  # 跨域
     register_config(app)
     register_bp(app)
+    print("===> 初始化")
+    current_app.logger.info('===> log 初始化')
     db.init_app(app)
     return app
