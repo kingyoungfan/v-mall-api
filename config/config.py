@@ -156,7 +156,8 @@ class NewConfig(BaseConfig):
     DEBUG = conf.getboolean('base', 'DEBUG')
     RUN_HOST = conf.get('base', 'RUN_HOST')
     RUN_PORT = conf.getint('base', 'RUN_PORT')
-
+    HOSTNAME = conf.get('mysql', 'HOSTNAME')
+    print("===> HOSTNAME:"+HOSTNAME)
     # mysql
     DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(
         conf.get('mysql', 'USERNAME'),
