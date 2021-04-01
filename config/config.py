@@ -32,9 +32,17 @@ def get_config():
             'msg': 'prod配置文件:{}'.format(base_path + 'pro.ini')
         },
     }
+
+    if flask_env == 'test':
+        config_path = base_path + 'test.ini'
+    elif flask_env == 'pro':
+        config_path = base_path + 'pro.ini'
+    else:
+        config_path = base_path + 'dev.ini'
+
     env_obj = env_path_dict.get(flask_env, default_env)
     msg = env_obj.get('msg')
-    config_path = env_obj.get('config_path')
+    # config_path = env_obj.get('config_path')
     print(msg)
     conf.read(config_path)
     return conf
