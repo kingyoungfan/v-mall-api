@@ -21,7 +21,7 @@ app = create_app()
 
 @app.route('/')
 def index():
-    return 'success'
+    return 'ok'
 
 
 def run_tips(x):
