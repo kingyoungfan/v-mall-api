@@ -165,7 +165,6 @@ class NewConfig(BaseConfig):
     RUN_HOST = conf.get('base', 'RUN_HOST')
     RUN_PORT = conf.getint('base', 'RUN_PORT')
     HOSTNAME = conf.get('mysql', 'HOSTNAME')
-    print("===> HOSTNAME:"+HOSTNAME)
     # mysql
     DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(
         conf.get('mysql', 'USERNAME'),
@@ -176,7 +175,7 @@ class NewConfig(BaseConfig):
     )
     SQLALCHEMY_DATABASE_URI = DB_URI
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-
+    print("===>mysql:"+DB_URI)
     # redis
     redis_obj = {
         'host': conf.get('redis', 'REDIS_HOST'),
