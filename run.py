@@ -4,7 +4,7 @@
 # @Email   : yangyang@ixiye.com
 # @File    : run.py
 # @Software: PyCharm
-
+import datetime
 import os
 import warnings
 import platform
@@ -43,7 +43,6 @@ def check_env(*args):
 
 def main():
     print("======>main 方法")
-    current_app.logger.info('===> run main')
     """启动"""
     # 必须变量
     check_env('FLASK_ENV')
