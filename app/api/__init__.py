@@ -9,7 +9,7 @@ from flask import Blueprint
 from flask_restful import Api
 
 from .demo.demo import Index, DemoApi, HttpExceptionTest, CustomExceptionTest, BaseExceptionTest
-from .demo.user import User
+from .demo.user import UserApi
 
 route_api = Blueprint('api', __name__)
 api = Api(route_api)
@@ -21,7 +21,7 @@ Resource_demo
 api.add_resource(Index, '/index', endpoint='index')
 
 # 用户接口
-api.add_resource(User, '/user', endpoint='user')
+api.add_resource(UserApi, '/user', endpoint='user')
 
 # 带参数url 可以写在一起
 # 无参数：http://0.0.0.0:9999/api/demo/
