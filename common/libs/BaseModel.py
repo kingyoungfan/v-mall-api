@@ -21,15 +21,15 @@ class BaseModel(db.Model):
     """
 
     __abstract__ = True
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True, comment='id')
-    status = db.Column('status', db.Integer, default=1, comment='状态:1正常,2删除')
-    create_time = db.Column('create_time', db.DateTime, default=datetime.now, comment='创建时间(结构化时间)')
-    create_timestamp = db.Column('create_timestamp', db.String(128), default=int(datetime.now().timestamp()),
-                                 comment='创建时间(时间戳)')
-    update_time = db.Column('update_time', db.DateTime, default=datetime.now, onupdate=datetime.now,
-                            comment='更新时间(结构化时间)')
-    update_timestamp = db.Column('update_timestamp', db.String(128), server_default='',
-                                 onupdate=int(datetime.now().timestamp()), comment='更新时间(时间戳)')
+    # id = db.Column(db.Integer, primary_key=True, autoincrement=True, comment='id')
+    # status = db.Column('status', db.Integer, default=1, comment='状态:1正常,2删除')
+    # create_time = db.Column('create_time', db.DateTime, default=datetime.now, comment='创建时间(结构化时间)')
+    # create_timestamp = db.Column('create_timestamp', db.String(128), default=int(datetime.now().timestamp()),
+    #                              comment='创建时间(时间戳)')
+    # update_time = db.Column('update_time', db.DateTime, default=datetime.now, onupdate=datetime.now,
+    #                         comment='更新时间(结构化时间)')
+    # update_timestamp = db.Column('update_timestamp', db.String(128), server_default='',
+    #                              onupdate=int(datetime.now().timestamp()), comment='更新时间(时间戳)')
 
     def keys(self):
         """
