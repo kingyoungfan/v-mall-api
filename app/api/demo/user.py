@@ -11,9 +11,9 @@ class UserApi(Resource):
     def get():
         data = request.get_data()
         current_app.logger.info('===> user data: ', data)
-        user = User(mobile='15857162166', name='xx')
-        db.session.add(user)
-        db.session.commit()
+        # user = User(mobile='15857162166', name='xx')
+        # db.session.add(user)
+        # db.session.commit()
         return jsonify({
             'code': 0
         })
