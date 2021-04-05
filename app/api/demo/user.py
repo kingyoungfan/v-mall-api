@@ -35,3 +35,11 @@ class UserApi(Resource):
             'code': 0,
             'msg': 'post method'
         })
+
+    @staticmethod
+    def delete():
+        current_app.logger.info('===> delete method')
+        return jsonify({
+            'code': 0,
+            'msg': 'delete method'
+        })
