@@ -75,8 +75,8 @@ class Model(db.Model, CRUDMixin):
     """
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, comment='id')
     created_at = db.Column('created_at', db.DateTime, default=datetime.now, comment='创建时间(结构化时间)')
-    updated_at = db.Column('updated_at', db.DateTime, default=datetime.now, onupdate=datetime.now,
-                           comment='更新时间(结构化时间)')
+    update_at = db.Column('update_at', db.DateTime, default=datetime.now, onupdate=datetime.now,
+                          comment='更新时间(结构化时间)')
 
     def to_dict(self):
         return {c.name: getattr(self, c.name, None) for c in self.__table__.columns}
