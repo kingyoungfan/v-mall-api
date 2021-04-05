@@ -12,7 +12,7 @@ class UserApi(Resource):
         # 从路径获取手机号
 
         mobile = request.args.get('mobile')
-        current_app.logger.info('==> mobile:', mobile)
+        current_app.logger.info('==> mobile:'+ mobile)
         # user = User(mobile='15857162166', name='xx')
         # db.session.add(user)
         # db.session.commit()
