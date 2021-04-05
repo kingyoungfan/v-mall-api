@@ -22,6 +22,7 @@ class UserApi(Resource):
 
     @staticmethod
     def put():
+        current_app.logger.info('===> put method')
         return jsonify({
             'code': 0,
             'msg': 'put method'
