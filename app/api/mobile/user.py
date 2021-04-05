@@ -22,4 +22,6 @@ def index():
     p.execute()
 
     r_val = R.get(r_key)
+    current_app.logger.info('===>r_val: ' + r_val)
+
     return {'code': 0, 'msg': 'mobile index', 'r_val': r_val}
