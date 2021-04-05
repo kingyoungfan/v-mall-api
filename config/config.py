@@ -187,6 +187,13 @@ class Config(BaseConfig):
     POOL = redis.ConnectionPool(**redis_obj)
     R = redis.Redis(connection_pool=POOL)
 
+    REDIS_URL = "redis://:{}@{}:{}/{}".format(
+        conf.get('redis', 'REDIS_PWD'),
+        conf.get('redis', 'REDIS_HOST'),
+        conf.get('redis', 'REDIS_PORT'),
+        conf.get('redis', 'REDIS_DB')
+    )
+
 
 config_obj = {
     'production': ProductionConfig,

@@ -3,6 +3,7 @@
 # @date 4/2/21 16:51
 from flask import Blueprint, request, current_app
 
+from ExtendRegister.redis_register import R
 from app.api.mobile import mobile_bp
 
 
@@ -14,4 +15,11 @@ def index():
     """
     token = request.headers.get("token")
     current_app.logger.info('===>token: ' + token)
-    return {'code': 0, 'msg': 'mobile index'}
+
+    p = R.pipeline()
+    r_key = 'R_TOKEN_15857162155'
+    p.set(r_key, token)
+    p.execute()
+
+    r_val = R.get(r_key)
+    return {'code': 0, 'msg': 'mobile index', 'r_val': r_val}

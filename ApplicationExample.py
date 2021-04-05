@@ -7,6 +7,7 @@ from flask_cors import CORS
 from ExtendRegister.bp_register import register_bp  # 蓝图
 from ExtendRegister.conf_register import register_config  # 配置
 from ExtendRegister.db_register import db  # db
+from ExtendRegister.redis_register import R
 
 """
 os.getcwd():
@@ -46,4 +47,6 @@ def create_app():
     flask_env = os.getenv('FLASK_ENV')
     app.logger.info("===> 初始化, flask_env: " + flask_env)
     db.init_app(app)
+    # 初始化redis
+    R.init_app(app)
     return app
