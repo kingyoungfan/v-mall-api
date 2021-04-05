@@ -16,12 +16,11 @@ def index():
     token = request.headers.get("token")
     current_app.logger.info('===>token: ' + token)
 
-    p = R.pipeline()
     r_key = 'R_TOKEN_15857162155'
-    p.set(r_key, token)
-    p.execute()
 
-    r_val = R.get(r_key).decode('utf-8')
+    R.set_val(r_key, token)
+
+    r_val = R.get_str(r_key)
     current_app.logger.info('===>r_val: ' + r_val)
 
     return {'code': 0, 'msg': 'mobile index', 'r_val': r_val}
