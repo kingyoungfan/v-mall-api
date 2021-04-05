@@ -44,9 +44,6 @@ def create_app():
     register_config(app)
     register_bp(app)
     flask_env = os.getenv('FLASK_ENV')
-    app.logger.info("===> 初始化, flask_env===start>")
-    app.logger.info(flask_env)
-    app.logger.info("===> 初始化, flask_env===end ")
-    app.logger.info('===> log 初始化')
+    app.logger.info("===> 初始化, flask_env: " + flask_env)
     db.init_app(app)
     return app
