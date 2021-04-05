@@ -21,7 +21,7 @@ def index():
     p.set(r_key, token)
     p.execute()
 
-    r_val = R.get(r_key)
+    r_val = str(R.get(r_key))
     current_app.logger.info('===>r_val: ' + r_val)
 
     return {'code': 0, 'msg': 'mobile index', 'r_val': r_val}
