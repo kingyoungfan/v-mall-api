@@ -12,7 +12,7 @@ Base = declarative_base()
 session = db.session
 
 
-class CRUDMixin(object):
+class CRUDMixin(db.Model):
     """Mixin that adds convenience methods for CRUD (create, read, update, delete) operations."""
 
     @classmethod
@@ -64,7 +64,7 @@ class CRUDMixin(object):
         return None
 
 
-class Model(db.Model, CRUDMixin):
+class Model(CRUDMixin):
     """Base model class that includes CRUD convenience methods."""
 
     __abstract__ = True
