@@ -14,5 +14,4 @@ def index():
     """
     token = request.headers.get("token")
     current_app.logger.info('===>token: ' + token)
-    R
     return {'code': 0, 'msg': 'mobile index'}
