@@ -3,7 +3,7 @@
 # @date 4/2/21 16:51
 from flask import Blueprint, request, current_app
 
-from ExtendRegister.redis_register import R
+from ExtendRegister.redis_register import RedisUtil
 from app.api.mobile import mobile_bp
 
 
@@ -18,9 +18,9 @@ def index():
 
     r_key = 'R_TOKEN_15857162155'
 
-    R.set_val(r_key, token)
+    RedisUtil.set_val(r_key, token)
 
-    r_val = R.get_str(r_key)
+    r_val = RedisUtil.get_str(r_key)
     current_app.logger.info('===>r_val: ' + r_val)
 
     return {'code': 0, 'msg': 'mobile index', 'r_val': r_val}
