@@ -3,7 +3,7 @@
 # @date 4/2/21 16:51
 from flask import Blueprint
 
-mobile_bp = Blueprint('mobile', __name__)
+from app.api.mobile import mobile_bp
 
 
 @mobile_bp.route('/index')
