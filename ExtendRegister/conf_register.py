@@ -20,4 +20,6 @@ def register_config(app):
 
     # 新注册配置文件
     app.config.from_object(config_obj['config'])  # 环境配置
+
+    app.logger.info(config_obj['config'])
     # config_obj['config'].init_app(app)
