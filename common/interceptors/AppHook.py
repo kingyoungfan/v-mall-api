@@ -14,6 +14,10 @@ app = create_app()
 
 @app.before_request
 def before_request_api():
+    """
+    PC端app拦截器
+    :return:
+    """
     print('app app app app')
     path = request.path
     print(path)
