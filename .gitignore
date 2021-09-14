@@ -17,11 +17,17 @@ eggs/
 lib/
 lib64/
 parts/
+<<<<<<< HEAD
 sdist/
 var/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
+=======
+sdist/*
+var/
+wheels/
+>>>>>>> 81b457d (update)
 *.egg-info/
 .installed.cfg
 *.egg
@@ -40,14 +46,20 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+<<<<<<< HEAD
 .nox/
+=======
+>>>>>>> 81b457d (update)
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py,cover
+=======
+>>>>>>> 81b457d (update)
 .hypothesis/
 .pytest_cache/
 
@@ -59,7 +71,10 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+<<<<<<< HEAD
 db.sqlite3-journal
+=======
+>>>>>>> 81b457d (update)
 
 # Flask stuff:
 instance/
@@ -77,6 +92,7 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+<<<<<<< HEAD
 # IPython
 profile_default/
 ipython_config.py
@@ -97,6 +113,13 @@ __pypackages__/
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
+=======
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+>>>>>>> 81b457d (update)
 
 # SageMath parsed files
 *.sage.py
@@ -122,8 +145,15 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
 .dmypy.json
 dmypy.json
 
 # Pyre type checker
 .pyre/
+=======
+
+/migrations
+.vscode
+.idea
+>>>>>>> 81b457d (update)
