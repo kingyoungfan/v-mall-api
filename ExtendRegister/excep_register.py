@@ -38,8 +38,3 @@ def errors(e):
         current_app.logger.info('-----Exception-----')
         # tb('-----Exception-----')
         return api_result(code=500, message='Exception:【{}】'.format(str(e)), data=request.method + ' ' + request.path)
-
-
-if __name__ == '__main__':
-    logs_path = os.getcwd() + '/logs/tb.log'
-    print(logs_path)
