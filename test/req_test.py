@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-03-15 15:56
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
+# @Email   : youngqiankun@163.com
 # @File    : req_test.py
 # @Software: PyCharm
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-06-25 17:06
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
+# @Email   : youngqiankun@163.com
 # @File    : excep_test.py
 # @Software: PyCharm
 

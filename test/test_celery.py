@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-06-28 15:02
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
+# @Email   : youngqiankun@163.com
 # @File    : test_celery.py
-# @Software: PyCharm
 
 from time import sleep
 
