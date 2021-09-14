@@ -13,23 +13,21 @@ from ExtendRegister.db_register import db
 
 class BaseModel(db.Model):
     """
-    status:状态
-    create_timestamp:创建时间戳
-    create_time:创建时间DateTime
-    update_timestamp:更新时间戳
-    update_time:更新时间DateTime
+    id: 主键
+    create_at:创建时间
+    update_at:最后更新更新
     """
-
     __abstract__ = True
-    # id = db.Column(db.Integer, primary_key=True, autoincrement=True, comment='id')
-    # status = db.Column('status', db.Integer, default=1, comment='状态:1正常,2删除')
-    # create_time = db.Column('create_time', db.DateTime, default=datetime.now, comment='创建时间(结构化时间)')
-    # create_timestamp = db.Column('create_timestamp', db.String(128), default=int(datetime.now().timestamp()),
-    #                              comment='创建时间(时间戳)')
-    # update_time = db.Column('update_time', db.DateTime, default=datetime.now, onupdate=datetime.now,
-    #                         comment='更新时间(结构化时间)')
-    # update_timestamp = db.Column('update_timestamp', db.String(128), server_default='',
-    #                              onupdate=int(datetime.now().timestamp()), comment='更新时间(时间戳)')
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True, comment='id')
+    create_at = db.Column('create_time', db.DateTime, default=datetime.now, comment='创建时间(结构化时间)')
+    update_at = db.Column('update_time', db.DateTime, default=datetime.now, onupdate=datetime.now,
+                          comment='更新时间(结构化时间)')
+
+    def add(self, commit=False):
+        db.session.add(self)
+        if commit:
+            db.session.commit()
+        return self
 
     def keys(self):
         """
