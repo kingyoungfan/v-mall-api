@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021-03-15 15:40
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : test_run.py
-# @Software: PyCharm
 
 
 from flask import Flask

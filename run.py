@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021-03-15 15:52
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : run.py
-# @Software: PyCharm
+
 import datetime
 import os
 import warnings

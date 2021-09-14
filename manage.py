@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/25 10:44 AM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : manage.py
-# @Software: PyCharm
+# @Email   : youngqiankun@ixiye.com
 
 import os
 

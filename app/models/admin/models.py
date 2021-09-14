@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/23 9:44 AM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : models.py
-# @Software: PyCharm
+
 
 from werkzeug.security import generate_password_hash, check_password_hash
 

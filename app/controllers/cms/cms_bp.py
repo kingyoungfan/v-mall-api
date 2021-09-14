@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/25 1:52 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : cms_bp.py
-# @Software: PyCharm
+
 
 from flask import Blueprint, abort, jsonify
 

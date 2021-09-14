@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-06-28 17:42
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : celeryconfig.py
-# @Software: PyCharm
+
 
 
 '''

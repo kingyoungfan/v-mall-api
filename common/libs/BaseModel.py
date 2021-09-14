@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-03-16 17:06
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : BaseModel.py
-# @Software: PyCharm
+
 
 import json
 from datetime import datetime

@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-07-15 11:08
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : test_env.py
-# @Software: PyCharm
+# @Email   : youngqiankun@163.com
 
 import os
 

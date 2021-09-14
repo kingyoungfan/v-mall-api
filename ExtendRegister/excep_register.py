@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/19 12:18 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : excep_register.py
-# @Software: PyCharm
+
 
 import traceback
 

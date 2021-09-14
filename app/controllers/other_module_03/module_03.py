@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/25 2:31 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : cms_module_03.py
-# @Software: PyCharm
+
 
 from flask import Blueprint, render_template
 

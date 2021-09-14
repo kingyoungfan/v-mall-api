@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/25 10:47 AM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : bp_register.py
-# @Software: PyCharm
+
 
 
 from app.api import route_api

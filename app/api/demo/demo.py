@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-03-20 17:05
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : demo.py
-# @Software: PyCharm
+# @Email   : youngqiankun@163.com
 
 import requests
 from flask import current_app

@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-07-01 16:46
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : main.py
-# @Software: PyCharm
+
 
 from time import sleep
 
@@ -31,10 +27,7 @@ def send_mail(mail):
 
 if __name__ == '__main__':
     pass
-    # 相关资料参考网址
-    'https://blog.51cto.com/steed/2292346?source=dral'
-    'https://www.cnblogs.com/276815076/p/9954049.html'
-
+  
     """
     执行:
         前台执行:

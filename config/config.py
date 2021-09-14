@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/25 4:02 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : config.py
-# @Software: PyCharm
+
 
 import os
 import platform
@@ -107,7 +104,7 @@ class DevelopmentConfig(BaseConfig):
     PORT = '3306'
     USERNAME = 'root'
     PASSWORD = '12345678'
-    DATABASE = 'jipin-mall-api'
+    DATABASE = 'v-mall-api'
     # &autocommit=true
     DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(
         USERNAME,

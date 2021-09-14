@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/19 11:45 AM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : conf_register.py
-# @Software: PyCharm
+
 
 from config.config import config_obj
 

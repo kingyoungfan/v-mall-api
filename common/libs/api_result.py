@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/19 12:00 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : api_result.py
-# @Software: PyCharm
+
 
 
 from flask import jsonify

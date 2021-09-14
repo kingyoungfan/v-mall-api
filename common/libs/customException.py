@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/19 2:46 PM
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : customException.py
-# @Software: PyCharm
+
 
 
 from werkzeug.exceptions import HTTPException

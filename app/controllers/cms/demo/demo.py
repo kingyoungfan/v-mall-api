@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-03-20 17:08
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : demo.py
-# @Software: PyCharm
 
 
 from flask.views import MethodView

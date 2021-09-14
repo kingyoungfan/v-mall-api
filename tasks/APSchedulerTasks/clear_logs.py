@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019-06-28 09:33
-# @Author  : yangyang
-# @Email   : yangyang@ixiye.com
-# @File    : clear_logs.py
-# @Software: PyCharm
 
 
-"https://my.oschina.net/sharesuiyue/blog/1601614"
+
 
 import time
 import os
